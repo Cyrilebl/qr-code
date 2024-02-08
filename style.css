@@ -1,6 +1,16 @@
+:root {
+  /* background-color */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+
+  /* text-color */
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--light-gray);
 }
 
 .container {
@@ -16,7 +26,7 @@ body {
 }
 
 .element {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 15px;
   width: 280px;
   padding: 15px;
@@ -29,14 +39,14 @@ img {
 }
 
 .text h1 {
-  color: hsl(218, 44%, 22%);
+  color: var(--dark-blue);
   font-weight: 700;
   font-size: 1.3em;
   padding: 0px 10px;
 }
 
 .text p {
-  color: hsl(220, 15%, 55%);
+  color: var(--grayish-blue);
 }
 
 .attribution {
